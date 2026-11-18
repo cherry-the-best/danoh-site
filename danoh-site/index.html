@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>단어한판 – 영어 단어 퀴즈</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+<header><div class="logo">단어한판</div><div class="best" id="best"></div></header>
+
+<section id="home">
+  <h1>하루 5분,<br>단어 한 판.</h1>
+  <p class="lead">뜻을 고르면 바로 정답과 예문을 확인해요. 틀린 문제는 마지막에 모아서 다시 보여드려요.</p>
+  <div class="sets" id="sets"></div>
+</section>
+
+<section id="quiz" class="hide">
+  <div class="bar"><div id="pbar"></div></div>
+  <div class="meta"><span id="pnum"></span><span id="pscore"></span></div>
+  <h2 class="q" id="qword"></h2>
+  <p class="hint">알맞은 뜻을 고르세요</p>
+  <div class="opts" id="opts"></div>
+  <div id="fb"></div>
+  <button class="btn hide" id="next"></button>
+</section>
+
+<section id="result" class="hide">
+  <p class="lead" id="rtitle" style="margin-bottom:0"></p>
+  <div class="score" id="rscore"></div>
+  <p class="lead" id="rmsg"></p>
+  <ul class="review" id="review"></ul>
+  <button class="btn" id="again">다시 풀기</button><button class="btn ghost" id="home2">세트 선택</button>
+  <div class="premium"><h3>프리미엄 문제집</h3><p>수능·토익 빈출 단어 1,000개와 오답 노트가 열려요. 월 4,900원.</p><a class="btn" href="#premium">무료로 7일 체험</a></div>
+</section>
+<footer>© 단어한판</footer>
+</div>
+
+<script src="js/questions.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
